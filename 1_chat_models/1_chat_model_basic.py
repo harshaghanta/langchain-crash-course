@@ -3,7 +3,10 @@ from langchain_openai import ChatOpenAI
 
 load_dotenv(override=True)
 
-model = ChatOpenAI(model="gpt-6-luna")
+MODEL_NAME = "gpt-oss-120b-medium"
+# MODEL_NAME = "gpt-6-luna"
+
+model = ChatOpenAI(model=MODEL_NAME)
 
 response = model.invoke("What is 81 divided by 9?")
 print("Full result:")
