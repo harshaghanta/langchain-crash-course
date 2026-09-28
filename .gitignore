@@ -1,5 +1,5 @@
 .env
-.bin
-.sqlite3
-.pickle
+*.bin
+*.sqlite3
+*.pickle
 poetry.lock
